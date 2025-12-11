@@ -1,7 +1,7 @@
 {
   "metadata": {
     "system": "KADANC Global Data Mapping System",
-    "version": "3.0",
+    "version": "4.0",
     "lastUpdated": "2025-12-11",
     "nextReview": "2026-01-11",
     "maintainedBy": "Bandile M Ventures (Pty) Ltd",
@@ -23,8 +23,8 @@
     "companyContact": "info@bandilem.com",
     "appWebsite": "https://kadanc.com",
     "appContact": "info@bandilem.com",
-    "bundleId": "com.bandilen.kadanc.production",
-    "teamId": "48VZWBBQJZ",
+    "bundleId": "com.bandilem.kadanc",
+    "teamId": "38VZVMB6U2",
     "founder": "Bandile Mndebele",
     "launchDate": "2025-01-15",
     "currentVersion": "2.5.1",
@@ -33,13 +33,60 @@
     "termsUrl": "https://bandilem.com/kadanc/terms",
     "supportUrl": "https://bandilem.com/kadanc/support"
   },
+
+  "appleDeveloperConfiguration": {
+    "entityName": "Bandile M Ventures (Pty) Ltd",
+    "registrationType": "Proprietary Limited Company (South Africa)",
+    "appleDeveloperAccount": {
+      "teamId": "38VZVMB6U2",
+      "program": "Apple Developer Program",
+      "enrolledAs": "Organization",
+      "accountHolder": "Mthobisi Bandile Mndebele",
+      "phone": "+27-76-616-7214",
+      "address": {
+        "street": "2 DOCKRAIL RD",
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "postalCode": "8001",
+        "country": "South Africa"
+      }
+    },
+    
+    "appIds": {
+      "production": {
+        "mainApp": "com.bandilem.kadanc",
+        "appClip": "com.bandilem.kadanc.clip",
+        "notificationServiceExtension": "com.bandilem.kadanc.nse",
+        "shareExtension": "com.bandilem.kadanc.share",
+        "widget": "com.bandilem.kadanc.widget"
+      },
+      "development": {
+        "mainApp": "com.bandilem.kadanc.dev",
+        "appClip": "com.bandilem.kadanc.dev.clip",
+        "notificationServiceExtension": "com.bandilem.kadanc.dev.nse",
+        "shareExtension": "com.bandilem.kadanc.dev.share",
+        "widget": "com.bandilem.kadanc.dev.widget"
+      },
+      "staging": {
+        "mainApp": "com.bandilem.kadanc.stage",
+        "appClip": "com.bandilem.kadanc.stage.clip",
+        "notificationServiceExtension": "com.bandilem.kadanc.stage.nse",
+        "shareExtension": "com.bandilem.kadanc.stage.share",
+        "widget": "com.bandilem.kadanc.stage.widget"
+      },
+      "legacy": {
+        "xcWildcard": "*",
+        "xcNSEProd": "com.yourcompany.KadancNSE-Prod"
+      }
+    }
+  },
   
   "dataInventory": {
     "accountData": {
       "description": "User registration and profile information for KADANC knowledge network",
       "purpose": "User authentication, personalized experience, network building",
       "fields": ["email", "username", "name", "profileBio", "avatarUrl", "professionalTitle", "industry", "expertiseTags"],
-      "storage": "Apple CloudKit (iCloud.com.bandilen.kadanc.production)",
+      "storage": "Apple CloudKit (iCloud.com.bandilem.kadanc)",
       "retention": "5_years_post_account_deletion",
       "legalBasis": {
         "gdpr": "6(1)(b) - Contract Performance",
@@ -153,7 +200,8 @@
       "lastAudit": "2025-11-15",
       "nextAudit": "2026-02-15",
       "kadancUsage": "Core data persistence for KADANC knowledge units",
-      "controllerContact": "Bandile M Ventures (Pty) Ltd via info@bandilem.com"
+      "controllerContact": "Bandile M Ventures (Pty) Ltd via info@bandilem.com",
+      "containerIdentifier": "iCloud.com.bandilem.kadanc"
     },
     
     "firebaseGoogle": {
@@ -188,11 +236,13 @@
   "contactInformation": {
     "dataController": {
       "name": "Bandile M Ventures (Pty) Ltd",
-      "address": "South Africa (Registered Office)",
+      "address": "2 DOCKRAIL RD, Cape Town, Western Cape 8001, South Africa",
       "website": "https://bandilem.com",
       "email": "info@bandilem.com",
+      "phone": "+27-76-616-7214",
       "legalRepresentative": "Bandile Mndebele",
-      "registrationNumber": "Available upon verification"
+      "registrationNumber": "Available upon verification",
+      "appleDeveloperTeamId": "38VZVMB6U2"
     },
     
     "dataProtectionOfficer": {
