@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KADANC Global Privacy & Data Protection Policy</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "PrivacyPolicy",
+        "name": "KADANC Global Privacy Policy",
+        "datePublished": "2024-03-15",
+        "dateModified": "2024-03-15",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Bandile M Ventures (Pty) Ltd",
+            "email": "info@bandilem.com",
+            "founder": "Bandile Mndebele"
+        },
+        "applicableJurisdiction": [
+            "EU (GDPR)",
+            "UK (UK GDPR)", 
+            "California (CCPA/CPRA)",
+            "South Africa (POPIA)",
+            "Brazil (LGPD)",
+            "Canada (PIPEDA)",
+            "Australia (Privacy Act 1988)",
+            "Japan (APPI)",
+            "Singapore (PDPA)"
+        ]
+    }
+    </script>
+    <style>
+        :root {
+            --primary: #1F1827;
+            --accent: #6D28D9;
+            --success: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --info: #3B82F6;
+            --gray-900: #111827;
+            --gray-800: #1F2937;
+            --gray-100: #F3F4F6;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.8; 
+            color: var(--gray-900);
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+        }
+        header { 
+            background: linear-gradient(135deg, var(--primary) 0%, var(--gray-800) 100%);
+            color: white; 
+            padding: 40px; 
+            border-radius: 12px; 
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            font-size: 2.5em; 
+            margin: 0 0 10px 0; 
+            background: linear-gradient(90deg, #ffffff 0%, #e5e7eb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .jurisdiction-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .jurisdiction-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 5px solid;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .jurisdiction-card:hover {
+            transform: translateY(-5px);
+        }
+        .gdpr { border-left-color: var(--info); }
+        .ccpa { border-left-color: var(--warning); }
+        .popia { border-left-color: var(--success); }
+        .lgpd { border-left-color: #8B5CF6; }
+        .pipeda { border-left-color: #DC2626; }
+        .compliance-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .compliance-table th {
+            background: var(--gray-100);
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        .compliance-table td {
+            padding: 15px;
+            border-top: 1px solid #e5e7eb;
+        }
+        .data-flow-map {
+            background: #f0f9ff;
+            border: 2px dashed var(--info);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        .update-log {
+            background: #fef3c7;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+        @media (max-width: 768px) {
+            .jurisdiction-grid { grid-template-columns: 1fr; }
+            body { padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌍 KADANC Global Privacy & Data Protection Policy</h1>
+        <p><strong>Effective:</strong> <span id="currentDate"></span> | <strong>Version:</strong> 3.0 | <strong>Jurisdictions:</strong> 12+ countries</p>
+        <p><strong>Controller:</strong> Bandile M Ventures (Pty) Ltd | <strong>Creator:</strong> Bandile Mndebele</p>
+    </header>
+
+    <section>
+        <h2>📋 Jurisdiction-Specific Compliance</h2>
+        <p>Click your region for specific rights and contact information:</p>
+        
+        <div class="jurisdiction-grid">
+            <div class="jurisdiction-card gdpr">
+                <h3>🇪🇺 European Union (GDPR)</h3>
+                <p><strong>Legal Basis:</strong> Art. 6(1)(a-f)</p>
+                <ul>
+                    <li>Right to access, rectification, erasure</li>
+                    <li>Data portability (Art. 20)</li>
+                    <li>Right to object (Art. 21)</li>
+                    <li><strong>DPO:</strong> info@bandilem.com</li>
+                </ul>
+                <p><em>Transfer Mechanism:</em> EU-U.S. DPF + SCCs</p>
+            </div>
+            
+            <div class="jurisdiction-card ccpa">
+                <h3>🇺🇸 California (CCPA/CPRA)</h3>
+                <p><strong>Categories:</strong> A, B, C, D, F, G, H, I, K</p>
+                <ul>
+                    <li>Right to know/delete/correct</li>
+                    <li>Opt-out of sale/sharing</li>
+                    <li>Limit sensitive data use</li>
+                    <li><strong>Response Time:</strong> 45 days</li>
+                </ul>
+                <p><em>Do Not Sell My Info:</em> Not applicable</p>
+            </div>
+            
+            <div class="jurisdiction-card popia">
+                <h3>🇿🇦 South Africa (POPIA)</h3>
+                <p><strong>Responsible Party:</strong> Section 1(x)</p>
+                <ul>
+                    <li>Prior authorization required</li>
+                    <li>Cross-border transfer safeguards</li>
+                    <li>Direct marketing opt-out</li>
+                    <li><strong>Information Officer:</strong> info@bandilem.com</li>
+                </ul>
+            </div>
+            
+            <div class="jurisdiction-card lgpd">
+                <h3>🇧🇷 Brazil (LGPD)</h3>
+                <p><strong>Legal Basis:</strong> Art. 7 I-X</p>
+                <ul>
+                    <li>Anonymization, blocking, deletion</li>
+                    <li>Portability (Art. 18 V)</li>
+                    <li>Review automated decisions</li>
+                    <li><strong>Encarregado:</strong> info@bandilem.com</li>
+                </ul>
+            </div>
+            
+            <div class="jurisdiction-card pipeda">
+                <h3>🇨🇦 Canada (PIPEDA)</h3>
+                <p><strong>Principle:</strong> 4.1-4.10</p>
+                <ul>
+                    <li>Meaningful consent</li>
+                    <li>Challenging compliance</li>
+                    <li>Transparency</li>
+                    <li><strong>Data Residency:</strong> Optional</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>📊 Data Processing Matrix</h2>
+        <table class="compliance-table">
+            <thead>
+                <tr>
+                    <th>Data Category</th>
+                    <th>Purpose & Legal Basis</th>
+                    <th>Retention Period</th>
+                    <th>Third Parties</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Account Data</strong><br>Name, email, profile</td>
+                    <td>Contract performance (GDPR 6(1)(b))<br>Service operation (CCPA 1798.140(v))</td>
+                    <td>5 years post-account closure</td>
+                    <td>Apple CloudKit, RevenueCat</td>
+                </tr>
+                <tr>
+                    <td><strong>Content Data</strong><br>Knowledge units, interactions</td>
+                    <td>Consent (GDPR 6(1)(a))<br>Legitimate interest (POPIA 11(1)(f))</td>
+                    <td>7 years (intellectual property)</td>
+                    <td>Apple CloudKit, CDN providers</td>
+                </tr>
+                <tr>
+                    <td><strong>Technical Data</strong><br>Device info, analytics</td>
+                    <td>Legitimate interest (GDPR 6(1)(f))<br>Service improvement (LGPD Art. 7 IX)</td>
+                    <td>2 years (anonymized)</td>
+                    <td>Firebase Analytics, Sentry</td>
+                </tr>
+                <tr>
+                    <td><strong>Payment Data</strong><br>Transaction records</td>
+                    <td>Legal obligation (GDPR 6(1)(c))<br>Tax compliance (global)</td>
+                    <td>10 years (legal requirement)</td>
+                    <td>Apple App Store, RevenueCat</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="data-flow-map">
+        <h2>🌐 International Data Transfer Map</h2>
+        <p><strong>Data Origin:</strong> User location → <strong>Processing:</strong> United States (Apple CloudKit) → <strong>Backup:</strong> Regional Apple Data Centers</p>
+        
+        <h3>Safeguards by Region:</h3>
+        <ul>
+            <li><strong>EU/UK:</strong> Standard Contractual Clauses (2021/914) + UK Addendum</li>
+            <li><strong>Switzerland:</strong> Revised FADP compliance</li>
+            <li><strong>South Africa:</strong> Section 72 POPIA adequacy determination</li>
+            <li><strong>Brazil:</strong> LGPD Chapter V international transfers</li>
+            <li><strong>Japan:</strong> Mutual adequacy agreement</li>
+            <li><strong>South Korea:</strong> PIPA adequacy decision</li>
+        </ul>
+        
+        <p><em>All processors bound by Data Processing Addendums (DPAs) with audit rights.</em></p>
+    </section>
+
+    <section>
+        <h2>🔐 Security & Compliance Framework</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 25px 0;">
+            <div style="background: #dcfce7; padding: 20px; border-radius: 10px;">
+                <h3>Technical Measures</h3>
+                <ul>
+                    <li>AES-256 encryption at rest & transit</li>
+                    <li>Zero-knowledge architecture for content</li>
+                    <li>Annual penetration testing</li>
+                    <li>Bug bounty program ($5,000+ rewards)</li>
+                </ul>
+            </div>
+            <div style="background: #dbeafe; padding: 20px; border-radius: 10px;">
+                <h3>Organizational Measures</h3>
+                <ul>
+                    <li>Privacy by Design (ISO 27701 aligned)</li>
+                    <li>Data Protection Impact Assessments</li>
+                    <li>Vendor risk management program</li>
+                    <li>Employee training (quarterly)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="update-log">
+        <h2>📝 Version History & Future Updates</h2>
+        <table style="width: 100%;">
+            <tr>
+                <th>Version</th>
+                <th>Date</th>
+                <th>Changes</th>
+                <th>Jurisdictions Added</th>
+            </tr>
+            <tr>
+                <td>3.0</td>
+                <td><span id="currentDate2"></span></td>
+                <td>Full global compliance framework</td>
+                <td>12+ jurisdictions</td>
+            </tr>
+            <tr>
+                <td>Future</td>
+                <td>Q4 2024</td>
+                <td>AI transparency disclosures</td>
+                <td>India (DPDPA), UAE</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer style="margin-top: 50px; padding-top: 30px; border-top: 2px solid #e5e7eb;">
+        <h2>📮 Contact & Rights Exercise</h2>
+        <p><strong>Data Controller:</strong> Bandile M Ventures (Pty) Ltd</p>
+        <p><strong>Global Privacy Contact:</strong> info@bandilem.com</p>
+        <p><strong>Response Time:</strong> 30 days (GDPR), 45 days (CCPA), 15 days (LGPD)</p>
+        <p><strong>Supervisory Authorities:</strong>
+            <br>• EU: <a href="https://edpb.europa.eu">European Data Protection Board</a>
+            <br>• UK: <a href="https://ico.org.uk">Information Commissioner's Office</a>
+            <br>• SA: <a href="https://www.justice.gov.za/inforeg/">Information Regulator</a>
+            <br>• BR: <a href="https://www.gov.br/anpd">Autoridade Nacional de Proteção de Dados</a>
+        </p>
+        
+        <p style="margin-top: 30px; font-size: 0.9em; color: #6b7280;">
+            © 2024 Bandile M Ventures (Pty) Ltd. All rights reserved.
+            <br>KADANC and the KADANC logo are trademarks of Bandile M Ventures (Pty) Ltd.
+            <br>Creator: Bandile Mndebele | Registered in South Africa
+        </p>
+    </footer>
+
+    <script>
+        // Set current date in multiple locations
+        const date = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        document.getElementById('currentDate').textContent = date;
+        document.getElementById('currentDate2').textContent = date;
+        
+        // Add jurisdiction detection
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.jurisdiction-card');
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const jurisdiction = this.querySelector('h3').textContent;
+                    alert(`Selected: ${jurisdiction}\n\nContact: info@bandilem.com\nReference: KADANC Privacy Request`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
