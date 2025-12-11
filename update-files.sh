@@ -1,3 +1,163 @@
+#!/bin/bash
+
+echo "Updating KADANC files with correct Bundle IDs..."
+
+cd ~/Desktop/kadanc-privacy-policy
+
+echo "1. Updating data-mapping.json..."
+cat > data-mapping.json << 'JSONEOF'
+{
+  "metadata": {
+    "system": "KADANC Global Data Mapping System",
+    "version": "4.0",
+    "lastUpdated": "2025-12-11",
+    "nextReview": "2026-01-11",
+    "maintainedBy": "Bandile M Ventures (Pty) Ltd",
+    "companyDomain": "bandilem.com",
+    "companyContact": "info@bandilem.com",
+    "creator": "Bandile Mndebele",
+    "dpoContact": "info@bandilem.com",
+    "product": "KADANC",
+    "productDomain": "kadanc.com",
+    "jurisdictionCoverage": "12+ Global Jurisdictions",
+    "repositoryLocation": "https://github.com/kadanc-platform/kadanc-privacy-policy/data-mapping.json",
+    "status": "Active - KADANC Production Ready"
+  },
+  
+  "projectInformation": {
+    "appName": "KADANC",
+    "company": "Bandile M Ventures (Pty) Ltd",
+    "companyWebsite": "https://bandilem.com",
+    "companyContact": "info@bandilem.com",
+    "appWebsite": "https://kadanc.com",
+    "appContact": "info@bandilem.com",
+    "bundleId": "com.bandilem.kadanc",
+    "teamId": "38VZVMB6U2",
+    "founder": "Bandile Mndebele",
+    "launchDate": "2025-01-15",
+    "currentVersion": "2.5.1",
+    "appStoreUrl": "https://apps.apple.com/app/kadanc-knowledge-network/idXXXXXXXXXX",
+    "privacyPolicyUrl": "https://bandilem.com/kadanc/privacy-policy",
+    "termsUrl": "https://bandilem.com/kadanc/terms",
+    "supportUrl": "https://bandilem.com/kadanc/support"
+  },
+
+  "appleDeveloperConfiguration": {
+    "entityName": "Bandile M Ventures (Pty) Ltd",
+    "registrationType": "Proprietary Limited Company (South Africa)",
+    "appleDeveloperAccount": {
+      "teamId": "38VZVMB6U2",
+      "program": "Apple Developer Program",
+      "enrolledAs": "Organization",
+      "accountHolder": "Mthobisi Bandile Mndebele",
+      "phone": "+27-76-616-7214",
+      "address": {
+        "street": "2 DOCKRAIL RD",
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "postalCode": "8001",
+        "country": "South Africa"
+      }
+    },
+    
+    "appIds": {
+      "production": {
+        "mainApp": "com.bandilem.kadanc",
+        "appClip": "com.bandilem.kadanc.clip",
+        "notificationServiceExtension": "com.bandilem.kadanc.nse",
+        "shareExtension": "com.bandilem.kadanc.share",
+        "widget": "com.bandilem.kadanc.widget"
+      },
+      "development": {
+        "mainApp": "com.bandilem.kadanc.dev",
+        "appClip": "com.bandilem.kadanc.dev.clip",
+        "notificationServiceExtension": "com.bandilem.kadanc.dev.nse",
+        "shareExtension": "com.bandilem.kadanc.dev.share",
+        "widget": "com.bandilem.kadanc.dev.widget"
+      },
+      "staging": {
+        "mainApp": "com.bandilem.kadanc.stage",
+        "appClip": "com.bandilem.kadanc.stage.clip",
+        "notificationServiceExtension": "com.bandilem.kadanc.stage.nse",
+        "shareExtension": "com.bandilem.kadanc.stage.share",
+        "widget": "com.bandilem.kadanc.stage.widget"
+      },
+      "legacy": {
+        "xcWildcard": "*",
+        "xcNSEProd": "com.yourcompany.KadancNSE-Prod"
+      }
+    }
+  },
+  
+  "dataInventory": {
+    "accountData": {
+      "description": "User registration and profile information for KADANC knowledge network",
+      "purpose": "User authentication, personalized experience, network building",
+      "fields": ["email", "username", "name", "profileBio", "avatarUrl", "professionalTitle", "industry", "expertiseTags"],
+      "storage": "Apple CloudKit (iCloud.com.bandilem.kadanc)",
+      "retention": "5_years_post_account_deletion",
+      "legalBasis": {
+        "gdpr": "6(1)(b) - Contract Performance",
+        "ccpa": "Category A - Identifiers",
+        "popia": "Section 11(1)(a) - Consent",
+        "lgpd": "Art. 7 V - Contract Execution",
+        "indiaDPDPA": "Section 4(2) - Legitimate Use"
+      },
+      "accessControls": "User-only with admin override via KADANC Console",
+      "encryption": "AES-256 at rest, TLS 1.3 in transit",
+      "collectionMethod": "Direct user input during KADANC registration",
+      "dataMinimization": "Only essential fields required",
+      "controller": "Bandile M Ventures (Pty) Ltd (info@bandilem.com)",
+      "processor": "Apple CloudKit for storage only"
+    },
+    
+    "knowledgeContentData": {
+      "description": "KADANC knowledge units, insights, and intellectual property",
+      "purpose": "Knowledge sharing, collaboration, intellectual property protection",
+      "fields": ["knowledgeUnitId", "title", "content", "tags", "mediaUrls", "interactionData", "claps", "reproductions", "collaborators"],
+      "storage": "Apple CloudKit Public Database with Private Collections",
+      "retention": "7_years_intellectual_property_preservation",
+      "legalBasis": {
+        "gdpr": "6(1)(a) - Explicit Consent via KADANC Terms",
+        "ccpa": "Category B - Personal Records",
+        "popia": "Section 11(1)(f) - Legitimate Interest (Knowledge Network)",
+        "lgpd": "Art. 7 I - Consent",
+        "uaePDPL": "Article 5 - Explicit Consent for Processing"
+      },
+      "accessControls": "Public/Private based on KADANC user settings + Team sharing",
+      "encryption": "End-to-end encryption for private knowledge units",
+      "collectionMethod": "User-generated content within KADANC app",
+      "copyright": "User retains ownership, KADANC license for platform operation",
+      "controller": "Bandile M Ventures (Pty) Ltd (info@bandilem.com)",
+      "platform": "KADANC (kadanc.com)"
+    },
+    
+    "influenceMetricsData": {
+      "description": "KADANC patent-pending influence scoring and network impact",
+      "purpose": "Quantify knowledge reproduction, measure influence, optimize network value",
+      "fields": ["clapCount", "reproductionScore", "velocityScore", "networkImpact", "predictedScore", "expertiseRank", "communityValue"],
+      "storage": "Apple CloudKit Private Database with Aggregated Analytics",
+      "retention": "3_years_analytics_for_continuous_improvement",
+      "legalBasis": {
+        "gdpr": "6(1)(f) - Legitimate Interest (Platform Improvement)",
+        "ccpa": "Category F - Internet Activity",
+        "popia": "Section 11(1)(f) - Legitimate Interest",
+        "lgpd": "Art. 7 IX - Legitimate Interest",
+        "thailandPDPA": "Section 24(5) - Legitimate Interest"
+      },
+      "accessControls": "User dashboard + Aggregated KADANC Analytics",
+      "encryption": "Field-level encryption for sensitive metrics",
+      "collectionMethod": "Automated tracking of KADANC interactions",
+      "algorithm": "Patent-pending influence quantification system",
+      "controller": "Bandile M Ventures (Pty) Ltd (info@bandilem.com)",
+      "product": "KADANC Influence Engine"
+    }
+  }
+}
+JSONEOF
+
+echo "2. Updating index.html..."
+cat > index.html << 'HTMLEOF'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -259,3 +419,96 @@
     </script>
 </body>
 </html>
+HTMLEOF
+
+echo "3. Updating README.md..."
+cat > README.md << 'MARKDOWNEOD'
+# 🌍 KADANC Global Privacy & Data Protection System
+
+## 🚀 Product Information
+
+**Product:** KADANC  
+**Website:** [kadanc.com](https://kadanc.com)  
+**Bundle ID:** \`com.bandilem.kadanc\`  
+**App Store:** [Coming Soon](https://apps.apple.com)  
+**Category:** Education / Knowledge Network  
+**Creator:** Bandile Mndebele  
+**Company:** Bandile M Ventures (Pty) Ltd  
+
+## 📱 Application Identifiers
+
+| Environment | Bundle ID | Purpose |
+|-------------|-----------|---------|
+| **Production** | \`com.bandilem.kadanc\` | Main application |
+| **Production App Clip** | \`com.bandilem.kadanc.clip\` | App Clip functionality |
+| **Production Share** | \`com.bandilem.kadanc.share\` | Share extension |
+| **Production Widget** | \`com.bandilem.kadanc.widget\` | Home screen widget |
+| **Production NSE** | \`com.bandilem.kadanc.nse\` | Notification Service Extension |
+| **Development** | \`com.bandilem.kadanc.dev\` | Development builds |
+| **Staging** | \`com.bandilem.kadanc.stage\` | Staging environment |
+
+## 🏢 Company Details
+
+**Company:** Bandile M Ventures (Pty) Ltd  
+**Address:** 2 DOCKRAIL RD, Cape Town, Western Cape 8001, South Africa  
+**Phone:** +27-76-616-7214  
+**Email:** info@bandilem.com  
+**Website:** [bandilem.com](https://bandilem.com)  
+
+**Apple Developer Account:**  
+- **Team ID:** 38VZVMB6U2  
+- **Program:** Apple Developer Program (Organization)  
+- **Account Holder:** Mthobisi Bandile Mndebele  
+
+## 📊 System Components
+
+### 1. **Data Mapping System** (\`data-mapping.json\`)
+Complete data inventory, processing activities, legal bases, and retention policies for all KADANC data categories.
+
+### 2. **Global Privacy Policy** (\`index.html\`)
+Interactive privacy policy covering 12+ jurisdictions with jurisdiction-specific compliance information.
+
+### 3. **Compliance Framework**
+- GDPR (EU/UK)
+- CCPA/CPRA (California)
+- POPIA (South Africa)
+- LGPD (Brazil)
+- PIPEDA (Canada)
+- +7 other jurisdictions
+
+## 🛡️ Security Features
+
+- **Encryption:** AES-256 at rest, TLS 1.3 in transit
+- **Authentication:** Apple Sign-In with 2FA
+- **Data Storage:** Apple CloudKit (iCloud.com.bandilem.kadanc)
+- **Backup:** Automated daily with 30-day retention
+- **Monitoring:** 24/7 security monitoring
+
+## 📅 Maintenance Schedule
+
+- **Quarterly:** Data mapping validation, vendor assessments
+- **Annually:** Privacy impact assessments, penetration testing
+- **Trigger-based:** Feature releases, jurisdiction expansions
+
+## 📞 Contact & Support
+
+**Data Protection Officer:** Bandile Mndebele  
+**Email:** info@bandilem.com  
+**Response Time:** 30 days maximum  
+**Jurisdiction Coverage:** Global (12+ jurisdictions)  
+
+**For privacy requests:** Email \`info@bandilem.com\` with subject "KADANC Privacy Request"
+
+## 📄 License
+
+© 2025 Bandile M Ventures (Pty) Ltd. All rights reserved.  
+KADANC is a trademark of Bandile M Ventures (Pty) Ltd.
+
+---
+
+*Last Updated: December 11, 2025*  
+*Version: 4.0*  
+*Status: ✅ Production Ready*
+MARKDOWNEOD
+
+echo "✅ Files updated successfully!"

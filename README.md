@@ -4,7 +4,7 @@
 
 **Product:** KADANC  
 **Website:** [kadanc.com](https://kadanc.com)  
-**Bundle ID:** `com.bandilem.kadanc`  
+**Bundle ID:** \`com.bandilem.kadanc\`  
 **App Store:** [Coming Soon](https://apps.apple.com)  
 **Category:** Education / Knowledge Network  
 **Creator:** Bandile Mndebele  
@@ -14,13 +14,13 @@
 
 | Environment | Bundle ID | Purpose |
 |-------------|-----------|---------|
-| **Production** | `com.bandilem.kadanc` | Main application |
-| **Production App Clip** | `com.bandilem.kadanc.clip` | App Clip functionality |
-| **Production Share** | `com.bandilem.kadanc.share` | Share extension |
-| **Production Widget** | `com.bandilem.kadanc.widget` | Home screen widget |
-| **Production NSE** | `com.bandilem.kadanc.nse` | Notification Service Extension |
-| **Development** | `com.bandilem.kadanc.dev` | Development builds |
-| **Staging** | `com.bandilem.kadanc.stage` | Staging environment |
+| **Production** | \`com.bandilem.kadanc\` | Main application |
+| **Production App Clip** | \`com.bandilem.kadanc.clip\` | App Clip functionality |
+| **Production Share** | \`com.bandilem.kadanc.share\` | Share extension |
+| **Production Widget** | \`com.bandilem.kadanc.widget\` | Home screen widget |
+| **Production NSE** | \`com.bandilem.kadanc.nse\` | Notification Service Extension |
+| **Development** | \`com.bandilem.kadanc.dev\` | Development builds |
+| **Staging** | \`com.bandilem.kadanc.stage\` | Staging environment |
 
 ## 🏢 Company Details
 
@@ -37,10 +37,10 @@
 
 ## 📊 System Components
 
-### 1. **Data Mapping System** (`data-mapping.json`)
+### 1. **Data Mapping System** (\`data-mapping.json\`)
 Complete data inventory, processing activities, legal bases, and retention policies for all KADANC data categories.
 
-### 2. **Global Privacy Policy** (`index.html`)
+### 2. **Global Privacy Policy** (\`index.html\`)
 Interactive privacy policy covering 12+ jurisdictions with jurisdiction-specific compliance information.
 
 ### 3. **Compliance Framework**
@@ -59,24 +59,28 @@ Interactive privacy policy covering 12+ jurisdictions with jurisdiction-specific
 - **Backup:** Automated daily with 30-day retention
 - **Monitoring:** 24/7 security monitoring
 
-## 🔄 Update Instructions
+## 📅 Maintenance Schedule
 
-```bash
-# Navigate to repository
-cd kadanc-privacy-policy
+- **Quarterly:** Data mapping validation, vendor assessments
+- **Annually:** Privacy impact assessments, penetration testing
+- **Trigger-based:** Feature releases, jurisdiction expansions
 
-# Update all files with correct Bundle IDs
-sed -i '' 's/com\.bandilen\.kadanc\.production/com.bandilem.kadanc/g' data-mapping.json
-sed -i '' 's/iCloud\.com\.bandilen\.kadanc\.production/iCloud.com.bandilem.kadanc/g' data-mapping.json
-sed -i '' 's/48VZWBBQJZ/38VZVMB6U2/g' data-mapping.json
+## 📞 Contact & Support
 
-sed -i '' 's/com\.bandilen\.kadanc\.production/com.bandilem.kadanc/g' index.html
-sed -i '' 's/48VZWBBQJZ/38VZVMB6U2/g' index.html
+**Data Protection Officer:** Bandile Mndebele  
+**Email:** info@bandilem.com  
+**Response Time:** 30 days maximum  
+**Jurisdiction Coverage:** Global (12+ jurisdictions)  
 
-sed -i '' 's/com\.bandilen\.kadanc\.production/com.bandilem.kadanc/g' README.md
-sed -i '' 's/48VZWBBQJZ/38VZVMB6U2/g' README.md
+**For privacy requests:** Email \`info@bandilem.com\` with subject "KADANC Privacy Request"
 
-# Commit changes
-git add .
-git commit -m "Update to correct Bundle IDs: com.bandilem.kadanc"
-git push origin main
+## 📄 License
+
+© 2025 Bandile M Ventures (Pty) Ltd. All rights reserved.  
+KADANC is a trademark of Bandile M Ventures (Pty) Ltd.
+
+---
+
+*Last Updated: December 11, 2025*  
+*Version: 4.0*  
+*Status: ✅ Production Ready*
