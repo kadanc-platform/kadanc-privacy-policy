@@ -1,0 +1,362 @@
+{
+  "metadata": {
+    "system": "KADANC Global Data Mapping System",
+    "version": "3.0",
+    "lastUpdated": "2025-12-11",
+    "nextReview": "2026-01-11",
+    "maintainedBy": "Bandile M Ventures (Pty) Ltd",
+    "companyDomain": "bandilem.com",
+    "companyContact": "info@bandilem.com",
+    "creator": "Bandile Mndebele",
+    "dpoContact": "info@bandilem.com",
+    "product": "KADANC",
+    "productDomain": "kadanc.com",
+    "jurisdictionCoverage": "12+ Global Jurisdictions",
+    "repositoryLocation": "https://github.com/bandilen/kadanc-privacy-policy/data-mapping.json",
+    "status": "Active - KADANC Production Ready"
+  },
+  
+  "projectInformation": {
+    "appName": "KADANC",
+    "company": "Bandile M Ventures (Pty) Ltd",
+    "companyWebsite": "https://bandilem.com",
+    "companyContact": "info@bandilem.com",
+    "appWebsite": "https://kadanc.com",
+    "appContact": "info@bandilem.com",
+    "bundleId": "com.bandilen.kadanc.production",
+    "teamId": "48VZWBBQJZ",
+    "founder": "Bandile Mndebele",
+    "launchDate": "2025-01-15",
+    "currentVersion": "2.5.1",
+    "appStoreUrl": "https://apps.apple.com/app/kadanc-knowledge-network/idXXXXXXXXXX",
+    "privacyPolicyUrl": "https://bandilem.com/kadanc/privacy-policy",
+    "termsUrl": "https://bandilem.com/kadanc/terms",
+    "supportUrl": "https://bandilem.com/kadanc/support"
+  },
+  
+  "dataInventory": {
+    "accountData": {
+      "description": "User registration and profile information for KADANC knowledge network",
+      "purpose": "User authentication, personalized experience, network building",
+      "fields": ["email", "username", "name", "profileBio", "avatarUrl", "professionalTitle", "industry", "expertiseTags"],
+      "storage": "Apple CloudKit (iCloud.com.bandilen.kadanc.production)",
+      "retention": "5_years_post_account_deletion",
+      "legalBasis": {
+        "gdpr": "6(1)(b) - Contract Performance",
+        "ccpa": "Category A - Identifiers",
+        "popia": "Section 11(1)(a) - Consent",
+        "lgpd": "Art. 7 V - Contract Execution",
+        "indiaDPDPA": "Section 4(2) - Legitimate Use"
+      },
+      "accessControls": "User-only with admin override via KADANC Console",
+      "encryption": "AES-256 at rest, TLS 1.3 in transit",
+      "collectionMethod": "Direct user input during KADANC registration",
+      "dataMinimization": "Only essential fields required",
+      "controller": "Bandile M Ventures (Pty) Ltd (info@bandilem.com)",
+      "processor": "Apple CloudKit for storage only"
+    },
+    
+    "knowledgeContentData": {
+      "description": "KADANC knowledge units, insights, and intellectual property",
+      "purpose": "Knowledge sharing, collaboration, intellectual property protection",
+      "fields": ["knowledgeUnitId", "title", "content", "tags", "mediaUrls", "interactionData", "claps", "reproductions", "collaborators"],
+      "storage": "Apple CloudKit Public Database with Private Collections",
+      "retention": "7_years_intellectual_property_preservation",
+      "legalBasis": {
+        "gdpr": "6(1)(a) - Explicit Consent via KADANC Terms",
+        "ccpa": "Category B - Personal Records",
+        "popia": "Section 11(1)(f) - Legitimate Interest (Knowledge Network)",
+        "lgpd": "Art. 7 I - Consent",
+        "uaePDPL": "Article 5 - Explicit Consent for Processing"
+      },
+      "accessControls": "Public/Private based on KADANC user settings + Team sharing",
+      "encryption": "End-to-end encryption for private knowledge units",
+      "collectionMethod": "User-generated content within KADANC app",
+      "copyright": "User retains ownership, KADANC license for platform operation",
+      "controller": "Bandile M Ventures (Pty) Ltd (info@bandilem.com)",
+      "platform": "KADANC (kadanc.com)"
+    },
+    
+    "influenceMetricsData": {
+      "description": "KADANC patent-pending influence scoring and network impact",
+      "purpose": "Quantify knowledge reproduction, measure influence, optimize network value",
+      "fields": ["clapCount", "reproductionScore", "velocityScore", "networkImpact", "predictedScore", "expertiseRank", "communityValue"],
+      "storage": "Apple CloudKit Private Database with Aggregated Analytics",
+      "retention": "3_years_analytics_for_continuous_improvement",
+      "legalBasis": {
+        "gdpr": "6(1)(f) - Legitimate Interest (Platform Improvement)",
+        "ccpa": "Category F - Internet Activity",
+        "popia": "Section 11(1)(f) - Legitimate Interest",
+        "lgpd": "Art. 7 IX - Legitimate Interest",
+        "thailandPDPA": "Section 24(5) - Legitimate Interest"
+      },
+      "accessControls": "User dashboard + Aggregated KADANC Analytics",
+      "encryption": "Field-level encryption for sensitive metrics",
+      "collectionMethod": "Automated tracking of KADANC interactions",
+      "algorithm": "Patent-pending influence quantification system",
+      "controller": "Bandile M Ventures (Pty) Ltd (info@bandilem.com)",
+      "product": "KADANC Influence Engine"
+    },
+    
+    "technicalAnalyticsData": {
+      "description": "KADANC app performance, usage patterns, and technical diagnostics",
+      "purpose": "App optimization, bug resolution, user experience improvement",
+      "fields": ["deviceId", "appVersion", "osVersion", "crashReports", "featureUsage", "sessionDuration", "performanceMetrics"],
+      "storage": "Firebase Analytics (Pseudonymized) + Apple Crash Reports",
+      "retention": "2_years_anonymized_for_product_development",
+      "legalBasis": {
+        "gdpr": "6(1)(f) - Legitimate Interest (Service Improvement)",
+        "ccpa": "Category F - Internet Activity",
+        "popia": "Section 11(1)(f) - Legitimate Interest",
+        "lgpd": "Art. 7 IX - Legitimate Interest",
+        "saudiPDPL": "Article 4 - Legitimate Purpose"
+      },
+      "accessControls": "KADANC Engineering Team Only",
+      "encryption": "Transport layer encryption + pseudonymization",
+      "collectionMethod": "Automated analytics SDK integration",
+      "anonymization": "Device identifiers pseudonymized, no direct user linkage",
+      "controller": "Bandile M Ventures (Pty) Ltd (info@bandilem.com)",
+      "processor": "Google Firebase (analytics only)"
+    },
+    
+    "monetizationData": {
+      "description": "KADANC subscription and premium feature access",
+      "purpose": "Revenue generation, premium feature access management",
+      "fields": ["subscriptionTier", "purchaseDate", "renewalDate", "transactionId", "paymentMethod", "featureAccess"],
+      "storage": "RevenueCat + Apple App Store Connect",
+      "retention": "7_years_financial_compliance",
+      "legalBasis": {
+        "gdpr": "6(1)(b) - Contract Performance",
+        "ccpa": "Category G - Commercial Information",
+        "popia": "Section 11(1)(a) - Consent",
+        "lgpd": "Art. 7 V - Contract Execution",
+        "singaporePDPA": "Third Schedule - Business Improvement"
+      },
+      "accessControls": "User + KADANC Finance Team",
+      "encryption": "PCI-DSS compliant payment processing",
+      "collectionMethod": "Apple App Store + RevenueCat integration",
+      "compliance": "PCI-DSS, tax regulation adherence",
+      "controller": "Bandile M Ventures (Pty) Ltd (info@bandilem.com)",
+      "processor": "Apple App Store, RevenueCat"
+    }
+  },
+  
+  "thirdPartyProcessors": {
+    "appleCloudKit": {
+      "service": "Primary Data Storage & Sync for KADANC",
+      "location": "United States (Apple Data Centers - Regional)",
+      "dataTypes": ["All KADANC user data and content"],
+      "transferMechanism": "EU-U.S. Data Privacy Framework + SCCs",
+      "dpaUrl": "https://www.apple.com/legal/privacy/data-transfer/",
+      "subProcessors": ["AWS", "Google Cloud Platform"],
+      "complianceStatus": "Active",
+      "lastAudit": "2025-11-15",
+      "nextAudit": "2026-02-15",
+      "kadancUsage": "Core data persistence for KADANC knowledge units",
+      "controllerContact": "Bandile M Ventures (Pty) Ltd via info@bandilem.com"
+    },
+    
+    "firebaseGoogle": {
+      "service": "Analytics & Crash Reporting for KADANC",
+      "location": "United States (Google Cloud Platform)",
+      "dataTypes": ["Pseudonymized KADANC usage data", "Crash reports"],
+      "transferMechanism": "SCCs + UK Addendum + DPF",
+      "dpaUrl": "https://firebase.google.com/terms/data-processing-terms",
+      "subProcessors": ["Google LLC"],
+      "complianceStatus": "Active",
+      "lastAudit": "2025-10-20",
+      "nextAudit": "2026-01-20",
+      "kadancUsage": "Performance monitoring and user behavior analytics",
+      "controllerContact": "Bandile M Ventures (Pty) Ltd via info@bandilem.com"
+    },
+    
+    "revenueCat": {
+      "service": "KADANC Subscription Management",
+      "location": "United States",
+      "dataTypes": ["KADANC purchase history", "Subscription status"],
+      "transferMechanism": "SCCs + UK Addendum",
+      "dpaUrl": "https://www.revenuecat.com/dpa",
+      "subProcessors": ["Google Cloud Platform", "Stripe"],
+      "complianceStatus": "Active",
+      "lastAudit": "2025-09-30",
+      "nextAudit": "2026-03-31",
+      "kadancUsage": "Premium feature access and subscription management",
+      "controllerContact": "Bandile M Ventures (Pty) Ltd via info@bandilem.com"
+    }
+  },
+  
+  "contactInformation": {
+    "dataController": {
+      "name": "Bandile M Ventures (Pty) Ltd",
+      "address": "South Africa (Registered Office)",
+      "website": "https://bandilem.com",
+      "email": "info@bandilem.com",
+      "legalRepresentative": "Bandile Mndebele",
+      "registrationNumber": "Available upon verification"
+    },
+    
+    "dataProtectionOfficer": {
+      "name": "Bandile Mndebele (Designated DPO)",
+      "email": "info@bandilem.com",
+      "responseTime": "30 days maximum",
+      "jurisdiction": "Global coverage for KADANC",
+      "subjectLine": "KADANC Data Protection Request"
+    },
+    
+    "productSupport": {
+      "product": "KADANC",
+      "website": "https://kadanc.com",
+      "support": "info@bandilem.com",
+      "documentation": "https://bandilem.com/kadanc/docs",
+      "privacyRequests": "info@bandilem.com with subject 'Privacy Request'"
+    }
+  },
+  
+  "complianceSchedule": {
+    "quarterly": [
+      "KADANC Data mapping validation (Due: 2026-03-31)",
+      "Third-party vendor assessment for KADANC (Due: 2026-03-15)",
+      "Security audit review (Due: 2026-03-20)",
+      "Policy update verification (Due: 2026-03-25)",
+      "Employee access rights review (Due: 2026-03-30)"
+    ],
+    
+    "annually": [
+      "KADANC Privacy impact assessment (Due: 2026-12-31)",
+      "Penetration testing (Due: 2026-06-30)",
+      "Employee training refresh (Due: 2026-09-30)",
+      "Business continuity testing (Due: 2026-10-31)",
+      "Regulatory gap analysis (Due: 2026-11-30)"
+    ],
+    
+    "triggerBased": [
+      "KADANC Data breach response drill",
+      "New jurisdiction assessment for KADANC expansion",
+      "Major KADANC feature release review",
+      "Merger/acquisition integration",
+      "Significant KADANC user complaint resolution"
+    ]
+  },
+  
+  "jurisdictionRoadmap": {
+    "currentCoverage": [
+      "EU (GDPR) - Full compliance",
+      "UK (UK GDPR) - Full compliance",
+      "California (CCPA/CPRA) - Full compliance",
+      "South Africa (POPIA) - Full compliance",
+      "Brazil (LGPD) - Full compliance",
+      "Canada (PIPEDA) - Full compliance",
+      "Australia (Privacy Act) - Full compliance",
+      "Japan (APPI) - Full compliance",
+      "Singapore (PDPA) - Full compliance"
+    ],
+    
+    "december2025_active": [
+      "India (DPDPA 2023) - Implementation complete",
+      "United Arab Emirates (PDPL) - Implementation complete",
+      "Switzerland (revFADP) - Implementation complete",
+      "South Korea (PIPA) - Implementation complete"
+    ],
+    
+    "q1_2026_target": [
+      "Thailand (PDPA)",
+      "Vietnam (PDPD)",
+      "Saudi Arabia (PDPL)"
+    ],
+    
+    "q2_2026_target": [
+      "Mexico (LFPDPPP)",
+      "Argentina (PDP Law)",
+      "Chile (Privacy Law)"
+    ],
+    
+    "monitoringPhase": [
+      "China (PIPL) - Market access evaluation",
+      "Russia (Federal Law 152) - Geopolitical assessment",
+      "Turkey (KVKK) - Technical implementation review"
+    ],
+    
+    "futureConsideration": [
+      "African Union Convention",
+      "ASEAN Framework",
+      "Digital Services Act (DSA) compliance"
+    ]
+  },
+  
+  "kadancSecurityFramework": {
+    "encryption": {
+      "atRest": "AES-256 encryption for all KADANC data",
+      "inTransit": "TLS 1.3 for all communications",
+      "endToEnd": "Zero-knowledge architecture for private KADANC content",
+      "keyManagement": "Apple CloudKit managed keys with user-controlled access"
+    },
+    
+    "accessControls": {
+      "userAuthentication": "Apple Sign-In with two-factor authentication",
+      "adminAccess": "Role-based access control for KADANC team",
+      "apiSecurity": "OAuth 2.0 with scope-limited tokens",
+      "auditLogging": "Comprehensive access logs for all KADANC systems"
+    },
+    
+    "infrastructure": {
+      "hosting": "Apple CloudKit with regional data centers",
+      "backup": "Automated daily backups with 30-day retention",
+      "disasterRecovery": "Multi-region failover for KADANC services",
+      "monitoring": "24/7 security monitoring with automated alerts"
+    }
+  },
+  
+  "userRightsFramework": {
+    "access": {
+      "description": "Right to access KADANC data",
+      "implementation": "In-app data export feature",
+      "timeline": "30 days (GDPR), 45 days (CCPA)",
+      "contact": "info@bandilem.com with 'KADANC Data Access Request'"
+    },
+    
+    "deletion": {
+      "description": "Right to delete KADANC account and data",
+      "implementation": "Account deletion in app settings",
+      "timeline": "Immediate for account, 30 days for complete purge",
+      "contact": "In-app deletion or email request to info@bandilem.com"
+    },
+    
+    "correction": {
+      "description": "Right to correct inaccurate KADANC data",
+      "implementation": "In-app profile and content editing",
+      "timeline": "Immediate for user-editable data",
+      "contact": "In-app edit or info@bandilem.com"
+    },
+    
+    "portability": {
+      "description": "Right to export KADANC data",
+      "implementation": "JSON export of all user data",
+      "timeline": "30 days maximum",
+      "format": "Structured JSON with documentation",
+      "contact": "info@bandilem.com with 'KADANC Data Portability Request'"
+    },
+    
+    "objection": {
+      "description": "Right to object to KADANC data processing",
+      "implementation": "Privacy settings controls",
+      "timeline": "Immediate effect",
+      "contact": "info@bandilem.com with 'KADANC Processing Objection'"
+    }
+  },
+  
+  "incidentResponse": {
+    "breachNotification": {
+      "supervisoryAuthorities": "72 hours (GDPR), as soon as possible (other jurisdictions)",
+      "affectedUsers": "Without undue delay",
+      "documentation": "All incidents logged in KADANC Security Log",
+      "contact": "info@bandilem.com for breach reporting"
+    },
+    
+    "responseTeam": {
+      "dpo": "Bandile Mndebele via info@bandilem.com",
+      "cto": "Primary technical responder",
+      "legal": "External counsel on retainer",
+      "communications": "Designated spokesperson from Bandile M Ventures"
+    }
+  }
+}
